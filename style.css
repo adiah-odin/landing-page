@@ -273,3 +273,14 @@ header {
 	border: 2px solid var(--clr-light);
 	border-radius: 6px;
 }
+
+/* ------------------------------------ */
+/* Footer								*/
+/* ------------------------------------- */
+
+footer {
+	background-color: var(--clr-dark);
+	color: var(--clr-gray);
+	padding: 2rem;
+	text-align: center;
+}

@@ -1,4 +1,24 @@
 /* ------------------------------------ */
+/* Custom Properties  					*/
+/* ------------------------------------- */
+
+:root {
+	/* colors */
+	--clr-dark: #1f2937;
+	--clr-gray: #e5e7eb;
+	--clr-light: #f9faf8;
+	--clr-accent: #3882f6;
+
+	--fs-700: 3rem;
+	--fs-600: 2.25rem;
+	--fs-500: 1.5rem;
+	--fs-400: 1.125rem;
+
+	--ff-sans: 'Roboto', sans-serif;
+}
+
+
+/* ------------------------------------ */
 /* 				Reset  					 */
 /* ------------------------------------- */
 
@@ -38,16 +58,12 @@ p {
 
 /* set up the body */
 body {
-	font-family: var(--ff-sans-normal);
+	font-family: var(--ff-sans);
 	font-size: var(--fs-400);
-	background-color: hsl( var(--clr-dark) );
-	color: hsl( var(--clr-white) );
+	background-color: var(--clr-light);
+	color: var(--clr-dark);
 	line-height: 1.5;
 	min-height: 100vh;
-
-	/* Allows all the elements to stretch out over the page*/
-	display: grid;
-	grid-template-rows: min-content 1fr;
 
 	overflow-x: hidden;
 }
@@ -56,9 +72,7 @@ body {
 img,
 picture {
 	max-width: 100%;
-	/* The display property overrides the hidden attribute */
-
-	/* display: block; */
+	display: block;
 }
 
 /* make form elements easier to work with */
